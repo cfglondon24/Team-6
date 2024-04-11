@@ -8,7 +8,7 @@ body, h1, h2, h3, p {
 body {
   font-family: 'sans-serif', sans-serif;
   line-height: 1.6;
-  background-color: #ffffff; /* Default background color */
+  background-color: #f1e5cc; /* Default background color */
   color: #333; /* Dark grey for text to ensure readability */
   
 }
@@ -21,7 +21,7 @@ body {
     }
 
 .site-header {
-  background-color: #f1ebdd; /* Vibrant orange for header */
+  background-color: #ff9900; /* Vibrant orange for header */
   color: black;
   padding: 0.5rem 0;
 }
@@ -36,14 +36,16 @@ body {
 .site-title {
   margin: 0; /* Removes the default margin */
   padding-right: 10px;
+  color: white;
 }
 
 .site-nav {
   display: flex;
+  color: white;
 }
 
 .nav-link {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: block;
