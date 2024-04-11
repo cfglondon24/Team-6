@@ -49,8 +49,6 @@
 }
 
 
-
-
 .thought {
     display:flex;
     text-decoration: none;
@@ -61,7 +59,7 @@
     max-width:220px;
     min-height:40px;
     margin:20px;
-    position:relative; left: 550px; bottom: 5px;
+    position:relative; left: 450px; bottom: 5px;
     align-items:center;
     justify-content:center;
     text-align:center;
