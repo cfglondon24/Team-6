@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Your JavaScript code here to handle clicks, form submissions, etc.
   });
-  const url = 'http://localhost:4000/'
+  const url = 'http://localhost:3000/'
 
 function testGet(endpoint) {
     fetch(url + endpoint)
