@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Seppy</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <h1 class="site-title">Seppy</h1>
+        <nav class="site-nav">
+          <!-- Navbar Links -->
+          <a href="landing-page.html" class="nav-link">My Body</a>
+          <a href="friend.html" class="nav-link">Find a Friend</a>
+          <a href="community.html" class="nav-link">Community</a>
+          <a href="resources.html" class="nav-link">Resources</a>
+          <a href="https://sepsistrust.org/" class="nav-link">About Sepsis
+            UK</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="page-contents">
+      <h2>Mental Health Check</h2>
+
+      <div id="emotions">
+        <h3>Today's Feeling<h3>
+            <img src="images/happy-face.png" class="faces" alt="Happy face"
+              id="happy" onclick="changeEmotion('happy')">
+            <img src="images/neutral-face.png" class="faces" alt="Straight face"
+              id="sad" onclick="changeEmotion('neutral')">
+            <img src="images/sad-face.png" class="faces" alt="Sad Face" id="angry"
+              onclick="changeEmotion('sad')">
+          </div>
+          <span id="submitEmotionMessage"></span>
+          <div id="journal">
+            <h3>Journal</h3>
+            <textarea id="journalEntry"
+              placeholder="Write your thoughts here..."></textarea>
+            <button id="submitJournalButton" onclick="submitJournalEntry()">Submit
+              Journal</button>
+          </div>
+          </br>
+          <span id="submitJournalEntryMessage"></span>
+          </br>
+
+        <!-- Symptoms Checklist -->
+        <div id="symptomsChecklist">
+          <h3>Check off any symptoms you are experiencing today:</h3>
+          <form id="symptomsForm">
+            <input type="checkbox" id="Low Mood" name="symptoms"
+              value="lowMood">
+            <label for="lowMood">Low Mood</label><br>
+            <input type="checkbox" id="Anxiety" name="symptoms" value="Anxiety">
+            <label for="Anxiety">Anxiety</label><br>
+            <input type="checkbox" id="Suicidal Thoughts" name="symptoms"
+              value="suicidalThoughts">
+            <label for="suicidalThoughts">Suicidal Thoughts</label><br>
+            <input type="checkbox" id="other" name="symptoms" value="other">
+            <label for="other">Other</label>
+          </form>
+          <button id="submitSymptomsButton" onclick="submitSymptoms()">Submit
+            Symptoms</button>
+
+        </div>
+        <span id="submitSymptomsMessage"></span>
+      </div>
+
+      <!-- Button that allows the user to go back to the body page -->
+      <a href="landing-page.html" class="back-button">Back to Body</a>
+  </div>
+
+
+    <script src="js/journal.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/facts.js"></script>
+  </body>
+</html>
+
+<style>
+
+    .faces {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .back-button {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 100px;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+
+    body {
+      align-items: center;
+      justify-content: center;
+    }
+
+    #submitJournalButton {
+      display: inline;
+      margin-top: 5px; 
+    }
+
+    div {
+      margin: 10px;
+      text-align: center;
+    }
+
+    
+
+
+  
+
+</style>

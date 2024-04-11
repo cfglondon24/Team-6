@@ -53,6 +53,22 @@ body {
   background-color: #c56000; /* Darker orange for hover state */
 }
 
+#factDisplay {
+  background-color: #f9f9f9; /* A light background to keep it subtle */
+  color: #666; /* Dark gray text color for subtlety */
+  font-style: italic; /* Italicize to differentiate from other text */
+  padding: 10px 20px;
+  margin: 10px 10px; /* Adjust margins to only top and bottom */
+  border-left: 3px solid #ff8f00; /* A hint of color from your theme */
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Maximum width to avoid too wide on large screens */
+  text-align: center; /* Center the text for a better aesthetic */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-radius: 5px; /* Slightly rounded corners for a modern look */
+  float: right; /* Float to the left */
+  clear: both; /* Clear floats if any before this element */
+  
+}
 
 /* Footer styles */
 footer {
