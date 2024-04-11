@@ -1,0 +1,19 @@
+.nurse-message-opening {
+    padding: 10px;
+    font-style: italic;
+}
+
+.iframe-container, .iframe-container2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.iframe-container iframe, .iframe-container2 iframe {
+    border: none;
+    width: calc(33.33% - 20px);
+    height: 300px;
+    margin-bottom: 20px;
+}
