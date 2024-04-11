@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sepsis App</title>
+  <link rel="stylesheet" href="css/head.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-color: #ffffff; /* Default background color */
+      transition: background-color 0.3s ease; /* Smooth transition */
+      cursor: pointer; /* Change cursor to pointer */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    /* Define the hover color */
+    body:hover {
+      background-color: #f0f0f0; /* Hover background color */
+    }
+
+    
+
+    .title {
+      text-align: center; /* Center align title */
+    }
+
+    .info-box {
+      margin-top: 20px; /* Add space between title and info box */
+      padding: 10px; /* Add padding to info box */
+      border: 1px solid #ccc; /* Add border to info box */
+      border-radius: 5px; /* Add border radius */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="site-title">Seppy</h1>
+      <nav class="site-nav">
+        <!-- Navbar Links -->
+        <a href="landing-page.html" class="nav-link">My Body</a>
+        <a href="friend.html" class="nav-link">Find a Friend</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="https://sepsistrust.org/" class="nav-link">About Sepsis UK</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="title">Mind related symptoms of sepsis</h2>
+    <div class="info-box">
+        <ul>
+            <li><input type="checkbox" class="checkbox" id="dizziness"> <label for="dizziness">Dizziness <img class="emoji" src="./assets/dizzy.png" height="20px;"></label></li>
+            <li><input type="checkbox" class="checkbox" id="confusion"> <label for="confusion">Confusion</label></li>
+            <li><input type="checkbox" class="checkbox" id="light-headed"> <label for="light-headed">Light Headed</label></li>
+        </ul>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body
