@@ -1,5 +1,5 @@
 import json
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, after_this_request
 
 
 app = Flask(__name__)
@@ -36,6 +36,10 @@ def get_journal_entries():
 
 @app.route('/facts', methods=['GET'])
 def get_sepsis_facts():
+    @after_this_request
+    def add_header(response):
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
     sepsis_facts_file = open('sepsis_facts.txt', 'r')
     sepsis_facts = sepsis_facts_file.readlines()
     for i in range(len(sepsis_facts)):

@@ -12,7 +12,7 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
-//   readFacts();
+  getHello();
 }
 
 function currentSlide(n) {
@@ -25,4 +25,13 @@ function showSlides(n) {
   var quote = document.getElementById("quote");
   quote.innerText = facts[n%7];
   slides.style.display = "block";
+}
+
+function getHello() {
+const url = 'http://localhost:4000/facts'
+    fetch(url)
+    .then(response => response.json())  
+    .then(json => {
+        console.log(json);
+    });
 }
