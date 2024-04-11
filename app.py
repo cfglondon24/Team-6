@@ -34,6 +34,16 @@ def get_journal_entries():
         return '', 201
     return jsonify(journal_entries)
 
+@app.route('/facts', methods=['GET'])
+def get_sepsis_facts():
+    sepsis_facts_file = open('sepsis_facts.txt', 'r')
+    sepsis_facts = sepsis_facts_file.readlines()
+    for i in range(len(sepsis_facts)):
+        sepsis_facts[i] = sepsis_facts[i].rstrip('\n')
+    sepsis_facts_file.close()
+    return jsonify(sepsis_facts)
+
+
 if __name__ == '__main__':
     app.run(port=4000, debug=True)
 
