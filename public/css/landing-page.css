@@ -40,7 +40,8 @@
 }
 
 .hover-link{
-    filter: grayscale(100%) brightness(50%)
+    filter: grayscale(100%) brightness(50%);
+    position: relative; bottom: 120px;
 }
 
 .hover-link:hover img{
