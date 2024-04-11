@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 symptoms = []
 users = []
+journal_entries = []
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -14,8 +15,6 @@ def register_user():
     print(user_details)
     users.append(user_details)
     return '', 201
-
-
 
 @app.route('/symptoms', methods=['GET', 'POST'])
 def get_symptoms():
@@ -27,5 +26,14 @@ def get_symptoms():
     return jsonify(symptoms)
 
 
+@app.route('/journal', methods=['GET', 'POST'])
+def get_journal_entries():
+    if request.method == 'POST':
+        entry = json.loads(request.data)
+        journal_entries.append(entry)
+        return '', 201
+    return jsonify(journal_entries)
+
 if __name__ == '__main__':
     app.run(port=4000, debug=True)
+
