@@ -1,0 +1,15 @@
+.emoji{
+	position:relative; 
+    top:5px;
+}
+
+.emoji2{
+	position:relative; 
+    top:15px;
+}
+
+li{
+	font-size: 20px;
+    list-style-type: none;
+}
+

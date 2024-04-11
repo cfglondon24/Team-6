@@ -4,24 +4,25 @@ body, h1, h2, h3, p {
   padding: 0;
 }
 
-/* Apply a base font family */
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'sans-serif', sans-serif;
   line-height: 1.6;
+  background-color: #f1e5cc; /* Default background color */
   color: #333; /* Dark grey for text to ensure readability */
-  background-color: #fff3e0; /* Light orange for a subtle background */
+  
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
+      max-width: 960px; /* Adjust container width as needed */
+      height: 100px; /* Adjust container width as needed */
+      margin: 0 auto; /* Center container horizontally */
+      padding: 20px; /* Add padding around container */
+    }
 
 .site-header {
-  background-color: #ff8f00; /* Vibrant orange for header */
-  color: #fff;
+  background-color: #ff9900; /* Vibrant orange for header */
+  color: black;
   padding: 0.5rem 0;
 }
 
@@ -35,10 +36,12 @@ body {
 .site-title {
   margin: 0; /* Removes the default margin */
   padding-right: 10px;
+  color: white;
 }
 
 .site-nav {
   display: flex;
+  color: white;
 }
 
 .nav-link {
@@ -126,3 +129,4 @@ button:hover {
     padding: 10px 0;
   }
 }
+
